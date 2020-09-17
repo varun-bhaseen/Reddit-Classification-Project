@@ -31,3 +31,8 @@
 - Visualization: Word Cloud, Matplot Lib, Seaborn
 - Model Building and Tuning: (SciKit Learn) Multinomial Naive Bayes (AUC: 85.82% ); Logistic Regression (AUC: 83.24%); SVC (AUC: 93.63%)
 - Model saved as Pickle
+- AUC curve from Jupyter Notebook:
+
+![AUC curve for Naive Bayes](https://github.com/varun-bhaseen/Reddit-Classification-Project/blob/master/images/NB%20ROC%20curve.jpg)
+
+![AUC Curve for SVM](https://github.com/varun-bhaseen/Reddit-Classification-Project/blob/master/images/ROC%20Curve%20for%20SVM.jpg)
