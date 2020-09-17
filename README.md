@@ -13,7 +13,7 @@
 - Using NLP classify the subreddit post from each Reddit as positive or negative
 - Use the KDD (Knowledge discovery from data) approach
 
-
+!["Image of approach and methodology"](https://github.com/varun-bhaseen/Reddit-Classification-Project/blob/master/images/DM%20Project%20Report.jpg)
 
 ## Web Deployment Technologies used:
 - Database Streaming: Apache Spark
