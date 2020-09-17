@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<!doctype html>
+<html>
+
+<body>
+    <!-- <h1> {{ prediction }}</h1> -->
+    <h2>{{sentence}}</h2>
+    <ul>
+        <li>NB predicted: {{prediction[0]}}</li>
+        <li>LR predicted: {{prediction[1]}}</li>
+        <li>SVM predicted: {{prediction[2]}}</li>
+
+        <li>NB Bigram model predicted: {{prediction[3]}}</li>
+    </ul>
+</body>
+
+</html>
+{% endblock content %}

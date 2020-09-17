@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block content %}
+Try it live.
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+  window.onload = function () {
+    $(function(){
+    $('.special_field_link').on('click', function() {
+        $("#a_input_id").val($(this).html());
+    });
+});
+  }
+  
+</script>
+<p>We have a trained model checking if the entered text here is productive/non productive in Reddit.</p>
+
+<p>Some good examples are:</p>
+<p>Negative:</p>
+<ul>
+  <li> <a href="#" class="special_field_link">you deserve to die</a></li>
+  <li><a href="#" class="special_field_link">you suck ahaha</a></li>
+  <li><a href="#" class="special_field_link">i don't like you</a></li>
+  <li><a href="#" class="special_field_link">you are an idiot</a></li>
+  <li><a href="#" class="special_field_link">i hate her and everything she does ew</a></li>
+</ul>
+<p>Positive:</p>
+<ul>
+  <li><a href="#" class="special_field_link">I like morning and sunshine</a></li>
+  <li><a href="#" class="special_field_link">I prefer tea over coffee</a></li>
+  <li><a href="#" class="special_field_link">There are more than 1800 roads in Prussia</a></li>
+  <li><a href="#" class="special_field_link">I don't know why that's happening to us</a></li>
+</ul>
+
+
+<div>
+  <form action="/result" method="POST">
+    <!-- <label for="age">Age</label> -->
+    <input id="a_input_id" type="text" id="text" name="text">
+    <input type="submit" value="Submit">
+  </form>
+</div>
+{% endblock content %}
